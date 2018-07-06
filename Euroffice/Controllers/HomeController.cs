@@ -25,7 +25,7 @@ namespace Euroffice.Controllers
 
 		public IActionResult Images([FromQuery]string categoryName)
 		{         
-            ViewData["Message"] = categoryName;
+			ViewData["CategoryName"] = categoryName;
 
 			return View(_catApiService.GetImages(categoryName));
         }
