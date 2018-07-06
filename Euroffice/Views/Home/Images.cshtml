@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Euroffice.Services.Image>
+
+<h3>@ViewData["Message"]</h3>
+
+@foreach (var item in Model)
+{
+    <div>
+        <img src="@item.url" />
+    </div>
+}
